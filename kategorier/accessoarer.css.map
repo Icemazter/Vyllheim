@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,SAAS,CAAC,GAAG,CAAA;EACT,KAAK,EAAE,eAAe;CACzB",
+    "sources": [
+        "accessoarer.scss"
+    ],
+    "names": [],
+    "file": "accessoarer.css"
+}
