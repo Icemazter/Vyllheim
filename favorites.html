@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="favorites.css">
+    <link rel="stylesheet" href="https://use.typekit.net/gqu0duu.css">
+    <link rel="stylesheet" href="utilities.css">
+    <link rel="icon" href="../Pipeline/Illustrator/bag).svg">
+    <script src="https://kit.fontawesome.com/eaa7bdffa7.js" crossorigin="anonymous"></script>
+    <title>Favoriter</title>
+</head>
+<body>
+    
+  <nav> <!--Meny funktion som är responsiv och fungerar genom en div class som bara visar vid en viss storlek av skärm så att menyn formaterar sig i olika storlekar-->
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+     <i class="fa-solid fa-bars"></i>
+    </label>
+    <label class="logo"> <a href="index.html"> <img src="/illustrator/Asset 18.svg"></a></label> 
+    <ul class="dropmenu"> 
+        <li><a href="/kategorier/dam.html" class="kategorier">DAM</a></li>
+        <li><a href="/kategorier/herr.html" class="kategorier">HERR</a></li>
+        <li><a href="/kategorier/barn.html" class="kategorier">BARN</a></li>
+        <li><a href="/kategorier/kläder.html" class="kategorier">Kläder</a></li>
+        <li><a href="/kategorier/skor.html" class="kategorier">Skor</a></li>
+        <li><a href="/kategorier/accessoarer" class="kategorier">Accessoarer</a></li>
+ 
+ </nav>
+    </ul>
+        
+           <div class="bottomnav">
+            <div class="input-wrapper">
+            <input id="search" type="search" placeholder="Sök...">
+            </div>
+            <div class="icons">
+            <a href="/user.html"><i class="fa-regular fa-user"></a></i>
+              <a href="/favorites.html">  <i class="fa-regular fa-heart"></a></i>
+              <a href="/cart.html"> <svg class="bag"width="50px" height="50px" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg"><path d=" M 587 173C 641 204 675 262 675 325C 675 325 675 325 675 325C 675 325 800 325 800 325C 814 325 825 336 825 350C 825 350 825 725 825 725C 825 780 780 825 725 825C 725 825 275 825 275 825C 220 825 175 780 175 725C 175 725 175 350 175 350C 175 336 186 325 200 325C 200 325 325 325 325 325C 325 263 358 206 412 174C 439 158 469 150 499 150C 529 150 560 158 587 173C 587 173 587 173 587 173M 437 217C 399 240 375 281 375 325C 375 325 625 325 625 325C 625 280 601 239 562 217C 543 206 521 200 499 200C 478 200 456 206 437 217C 437 217 437 217 437 217M 225 725C 225 753 247 775 275 775C 275 775 725 775 725 775C 753 775 775 753 775 725C 775 725 775 375 775 375C 775 375 675 375 675 375C 675 375 675 425 675 425C 675 439 664 450 650 450C 636 450 625 439 625 425C 625 425 625 375 625 375C 625 375 375 375 375 375C 375 375 375 425 375 425C 375 439 364 450 350 450C 336 450 325 439 325 425C 325 425 325 375 325 375C 325 375 225 375 225 375C 225 375 225 725 225 725"/></a></svg>
+            </div>
+          </div>
+          <div></div>
+
+          <!--Kundvagn nedan-->
+       
+      
+          <p>Dina Favoriter</p>
+
+          <div class="container favorite-products">
+            <div class="grid-4">
+                <div class="products" id="favproducts">
+                    <div class="product product1 grid grid-product" id="favproduct4">
+                       <a href="/produktsida/maryjane.html"><img src="/kläder/damskor/167784840679e4609e9bc3e166559c25064937478f.png" width="150" height="82"></a> 
+                        <span class="title-head">Du har 1 sparad vara</span>
+                        <div class="title">
+                            <span>Next </span>
+                            <br>
+                            <span class="sub">Mary Janes</span>
+                            <br>
+                            <span class="sub remove" id="removeProduct" onclick="sessionStorage.removeItem('favoriteproductContent4'); location.reload();"><i class="fa-solid fa-trash-can"></i>Ta bort</span>
+                        </div>
+                        <div class="price"> <!--Size****-->
+                            <span class="title-head">Storlek:</span>
+                            <span class="product-price">M</span>
+                        </div>
+                        <div class="amount">
+                            <span class="title-head">Antal:</span>
+                            <span><input type="number" value="1" class="article-amount"></span>
+                        </div>
+                        <div class="total">
+                            <span class="title-head">Pris:</span>
+                            <span class="total-price price">839,00 kr</span>
+                        </div>
+                    </div>
+                    
+                </div>      
+            </div>
+         
+    
+        
+        
+
+<div class="summary">
+    <div class="price-sum" id="priceSum"></div>
+</div>
+
+        
+<hr>
+
+
+<a href="/checkout.html"><button class="checkout">GÅ TILL CHECKOUT</button></a>
+<a href="/Main.he/index.html"><button class="shopping">FORTSÄTT HANDLA </button></a>
+
+</div>
+
+
+
+
+<footer class="footer">
+    <div class="foot-container">
+      <div class="row">
+      <div class="footer-col">
+        <h4>Företag</h4>
+        <ul class="ulfoot">
+          <li class="lifoot">  <a href="#">om oss</a></li>
+          <li class="lifoot">  <a href="#">våran service</a></li>
+          <li class="lifoot">  <a href="#">kuponger</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Support</h4>
+        <ul class="ulfoot">
+          <li class="lifoot">  <a href="/kategorier/support.html">FAQ</a></li>
+          <li class="lifoot">  <a href="#">frakt</a></li>
+          <li class="lifoot">  <a href="#">returnering</a></li>
+          <li class="lifoot">  <a href="#">beställningstatus</a></li>
+          <li class="lifoot">  <a href="#">betalningsalternativ</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Shop</h4>
+        <ul class="ulfoot">
+          <li class="lifoot">  <a href="#">herr</a></li>
+          <li class="lifoot">  <a href="#">dam</a></li>
+          <li class="lifoot">  <a href="#">barn</a></li>
+          <li class="lifoot">  <a href="#">skor</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Följ Oss</h4>
+        <div class="social-links">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+      </div>
+  
+      </div>
+    </div>
+  </footer>
+
+
+
+<script type="text/javascript">
+
+        
+const favoritecontent1 = sessionStorage.getItem("favoriteproductContent1");
+const favoritecontent2 = sessionStorage.getItem("favoriteproductContent2");
+const favoritecontent3 = sessionStorage.getItem("favoriteproductContent3")
+const favoriteContent4 = sessionStorage.getItem("favoriteproductContent4");
+const favoriteContent5 = sessionStorage.getItem("favoriteproductContent5");
+const favoriteContent6 = sessionStorage.getItem("favoriteproductContent6");
+const favoriteContent7 = sessionStorage.getItem("favoriteproductContent7");
+const container = document.querySelector("#favproducts");
+container.innerHTML = favoriteContent4 + favoritecontent1 + favoritecontent2 + favoritecontent3 + favoriteContent5 + favoriteContent6 + favoriteContent7
+
+
+
+
+
+
+
+</script>
+
+<script type="text/javascript"> 
+    var containRem = document.getElementById("favproducts");
+    containRem.innerHTML = containRem.innerHTML.replace(/null/g, "");
+
+
+</script>
+
+<script type="text/javascript"> //javascript för att summera priset på artiklarna tillagda i kundvagnen
+const totalPrice = document.querySelectorAll('.total-price');
+let sum = 0;
+totalPrice.forEach(div =>{
+    sum += parseInt(div.innerHTML);
+});
+
+const priceSum = document.querySelector('.price-sum');
+sessionStorage.setItem("total", sum);
+priceSum.innerHTML = `Totalt: ${sum} kr`;
+
+
+
+</script>
+
+</body>
+</html>

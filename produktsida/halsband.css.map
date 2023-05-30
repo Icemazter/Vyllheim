@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,gBAAgB,CAAC,KAAK,CAAA;EAClB,SAAS,EAAE,MAAM;EACjB,gBAAgB,EAAE,OAAO;EACzB,KAAK,EAAE,eAAe;EACtB,MAAM,EAAE,IAAI;EACZ,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,MAAM;EACvB,WAAW,EAAE,MAAM;EACnB,YAAY,EAAE,IAAI;EAClB,MAAM,EAAE,OAAO;EACf,WAAW,EAAE,IAAI;EACjB,WAAW,EAAE,GAAG;CACjB",
+    "sources": [
+        "halsband.scss"
+    ],
+    "names": [],
+    "file": "halsband.css"
+}
