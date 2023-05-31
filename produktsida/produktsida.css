@@ -108,7 +108,8 @@ nav .dropmenu li a {
   font-size: 17px;
   padding: 7px 13px;
   border-radius: 3px;
-  font-family: 'helvetica-bold';
+  font-weight: 700;
+  font-family: 'helvetica';
 }
 
 .kategorier:hover {

@@ -99,13 +99,13 @@ line-height: 80px;
 margin: 0 5px;
 }
 nav .dropmenu li a{
-color: var(--black-color);
-font-size: 17px;
-padding: 7px 13px;
-border-radius: 3px;
-font-family:'helvetica-bold';
- 
-}
+  color: var(--black-color);
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  font-weight: 700;
+  font-family:'helvetica';
+  }
 
 .kategorier:hover{
   background: none;

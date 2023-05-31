@@ -1,12 +1,12 @@
 @charset "UTF-8";
 @font-face {
   font-family: "helvetica-bold";
-  src: url(../Helvetica-Bold.ttf);
+  src: url(../fonts/Helvetica-Bold.ttf);
 }
 
 @font-face {
   font-family: "vermin";
-  src: url(../vermin_vibes_slant.ttf);
+  src: url(../fonts/vermin_vibes_slant.ttf);
 }
 
 ::-webkit-scrollbar {
@@ -105,6 +105,7 @@ nav .dropmenu li a {
   padding: 7px 13px;
   border-radius: 3px;
   font-family: 'helvetica-bold';
+  font-weight: 700;
 }
 
 .kategorier:hover {
@@ -339,7 +340,7 @@ ul {
 }
 
 .produkt-sida {
-  font-family: poppins;
+  font-family: "poppins";
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

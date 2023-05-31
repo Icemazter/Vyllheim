@@ -1,12 +1,12 @@
 
   @font-face {
     font-family:"helvetica-bold";
-    src: url(../Helvetica-Bold.ttf);
+    src: url(../fonts/Helvetica-Bold.ttf);
 }
 
 @font-face {
     font-family:"vermin";
-    src: url(../vermin_vibes_slant.ttf)
+    src: url(../fonts/vermin_vibes_slant.ttf)
 }
 
 ::-webkit-scrollbar {
@@ -104,6 +104,8 @@ font-size: 17px;
 padding: 7px 13px;
 border-radius: 3px;
 font-family:'helvetica-bold';
+font-weight: 700;
+
  
 }
 
@@ -344,7 +346,7 @@ ul{
 
 
 .produkt-sida{
-  font-family: poppins;
+  font-family: "poppins";
   display: flex;
   justify-content: center;
   margin-top: 100px;

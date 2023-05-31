@@ -1,11 +1,11 @@
 @font-face {
   font-family: "helvetica-bold";
-  src: url(../Helvetica-Bold.ttf);
+  src: url(../fonts/Helvetica-Bold.ttf);
 }
 
 @font-face {
   font-family: "vermin";
-  src: url(../vermin_vibes_slant.ttf);
+  src: url(../fonts/vermin_vibes_slant.ttf);
 }
 
 ::-webkit-scrollbar {
@@ -140,7 +140,8 @@ nav .dropmenu li a {
   font-size: 17px;
   padding: 7px 13px;
   border-radius: 3px;
-  font-family: 'helvetica-bold';
+  font-family: 'helvetica';
+  font-weight: 700;
 }
 
 a:active, a:hover {
@@ -361,7 +362,7 @@ p {
   left: 45%;
   color: #333;
   text-transform: uppercase;
-  font-family: helvetica-bold;
+  font-family: "helvetica";
   font-size: 35px;
 }
 
@@ -438,7 +439,8 @@ hr {
   margin-top: 40px;
   background-color: var(--primary-color);
   padding: 10px;
-  font-family: 'Helvetica-Bold';
+  font-family: 'Helvetica';
+  font-weight: 700;
   margin-right: 5rem;
 }
 
@@ -456,7 +458,8 @@ hr {
   background-color: var(--white-color);
   border: solid 2px #000;
   padding: 10px;
-  font-family: 'Helvetica-Bold';
+  font-family: 'Helvetica';
+  font-weight: 700;
   margin-right: 9rem;
 }
 
