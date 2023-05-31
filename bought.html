@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bought.css">
+    <link rel="stylesheet" href="utilities.css">
+    <script src="https://kit.fontawesome.com/eaa7bdffa7.js" crossorigin="anonymous"></script>
+    <title>Tack!</title>
+</head>
+<body>
+
+  <nav> <!--Meny funktion som är responsiv och fungerar genom en div class som bara visar vid en viss storlek av skärm så att menyn formaterar sig i olika storlekar-->
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+     <i class="fa-solid fa-bars"></i>
+    </label>
+    <label class="logo"> <a href="/index.html"> <img src="/illustrator/Asset 18.svg"></a></label> 
+    <ul class="dropmenu"> 
+        <li><a href="/kategorier/dam.html" class="kategorier">DAM</a></li>
+        <li><a href="/kategorier/herr.html" class="kategorier">HERR</a></li>
+        <li><a href="/kategorier/barn.html" class="kategorier">BARN</a></li>
+        <li><a href="/kategorier/kläder.html" class="kategorier">Kläder</a></li>
+        <li><a href="/kategorier/skor.html" class="kategorier">Skor</a></li>
+        <li><a href="/kategorier/accessoarer.html" class="kategorier">Accessoarer</a></li>
+ 
+ </nav>
+    </ul>
+     
+        <div class="bottomnav">
+         <div class="input-wrapper">
+         <input id="search" type="search" placeholder="Sök...">
+         </div>
+         <div class="icons">
+           <a href="/user.html"><i class="fa-regular fa-user"></a></i>
+             <a href="/favorites.html"><i class="fa-regular fa-heart"></a></i>
+             <a href="/cart.html"> <svg class="bag"width="50px" height="50px" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg"><path d=" M 587 173C 641 204 675 262 675 325C 675 325 675 325 675 325C 675 325 800 325 800 325C 814 325 825 336 825 350C 825 350 825 725 825 725C 825 780 780 825 725 825C 725 825 275 825 275 825C 220 825 175 780 175 725C 175 725 175 350 175 350C 175 336 186 325 200 325C 200 325 325 325 325 325C 325 263 358 206 412 174C 439 158 469 150 499 150C 529 150 560 158 587 173C 587 173 587 173 587 173M 437 217C 399 240 375 281 375 325C 375 325 625 325 625 325C 625 280 601 239 562 217C 543 206 521 200 499 200C 478 200 456 206 437 217C 437 217 437 217 437 217M 225 725C 225 753 247 775 275 775C 275 775 725 775 725 775C 753 775 775 753 775 725C 775 725 775 375 775 375C 775 375 675 375 675 375C 675 375 675 425 675 425C 675 439 664 450 650 450C 636 450 625 439 625 425C 625 425 625 375 625 375C 625 375 375 375 375 375C 375 375 375 425 375 425C 375 439 364 450 350 450C 336 450 325 439 325 425C 325 425 325 375 325 375C 325 375 225 375 225 375C 225 375 225 725 225 725"/></a></svg>
+           </div>
+        </div>
+
+
+       
+        <div class="overlay">
+<div class="popup">
+    <button class="close">&times;</button>
+    <h2>Tack för din beställning <b id="fname"></b>!</h2>
+    <p>En orderbekräftelse har skickats till <strong id="email"></strong>.</p>
+    <a href="/index.html" class="linke">Fortsätt Handla</a>
+</div>
+</div> 
+        
+   
+      
+        <a href="/index.html"><button class="shopping">FORTSÄTT HANDLA </button></a>
+
+        <footer class="footer">
+          <div class="foot-container">
+            <div class="row">
+            <div class="footer-col">
+              <h4>Företag</h4>
+              <ul class="ulfoot">
+                <li class="lifoot">  <a href="#">om oss</a></li>
+                <li class="lifoot">  <a href="#">våran service</a></li>
+                <li class="lifoot">  <a href="#">kuponger</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Support</h4>
+              <ul class="ulfoot">
+                <li class="lifoot">  <a href="/kategorier/support.html">FAQ</a></li>
+                <li class="lifoot">  <a href="#">frakt</a></li>
+                <li class="lifoot">  <a href="#">returnering</a></li>
+                <li class="lifoot">  <a href="#">beställningstatus</a></li>
+                <li class="lifoot">  <a href="#">betalningsalternativ</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Shop</h4>
+              <ul class="ulfoot">
+                <li class="lifoot">  <a href="#">herr</a></li>
+                <li class="lifoot">  <a href="#">dam</a></li>
+                <li class="lifoot">  <a href="#">barn</a></li>
+                <li class="lifoot">  <a href="#">skor</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Följ Oss</h4>
+              <div class="social-links">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+              </div>
+            </div>
+        
+            </div>
+          </div>
+        </footer>
+        
+
+ 
+    <script src="/popup/bought.js"></script>
+
+<script>
+  // Drar emailen från Sessionstoraget till denna fil
+  var email = sessionStorage.getItem("email");
+  
+  // Visar den sparade mailen i textboxen.
+  document.getElementById("email").textContent = email;
+
+  var fname = sessionStorage.getItem("fname");
+
+  document.getElementById("fname").textContent = fname;
+  </script>
+
+<p id="fname-message"></p>
+<p id="email-message"></p>
+
+</body>
+</html>
