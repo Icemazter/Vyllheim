@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital@1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@600;700&family=Roboto+Condensed:ital,wght@1,300&family=Roboto:ital,wght@0,400;0,500;1,300&display=swap");
 @font-face {
   font-family: "helvetica-bold";
-  src: url(../fonts/Helvetica-Bold.ttf);
+  src: url(../Helvetica-Bold.ttf);
 }
 
 @font-face {
   font-family: "vermin";
-  src: url(../fonts/vermin_vibes_slant.ttf);
+  src: url(../vermin_vibes_slant.ttf);
 }
 
 ::-webkit-scrollbar {
@@ -145,8 +145,7 @@ nav .dropmenu li a {
   font-size: 17px;
   padding: 7px 13px;
   border-radius: 3px;
-  font-weight: 700;
-  font-family: 'helvetica';
+  font-family: 'helvetica-bold';
 }
 
 a:active, a:hover {
@@ -646,13 +645,13 @@ h3 b {
 }
 
 .product-col-left {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.3))), url("../assets/GQB_Fragrance_Digital_16x9.webp") center/cover no-repeat;
-  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)), url("../assets/GQB_Fragrance_Digital_16x9.webp") center/cover no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.3))), url("/assets/GQB_Fragrance_Digital_16x9.webp") center/cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)), url("/assets/GQB_Fragrance_Digital_16x9.webp") center/cover no-repeat;
 }
 
 .product-col-r-top {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.3))), url("../assets/Brown and Beige Minimalist Fashion Banner.png") center/cover no-repeat;
-  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)), url("../assets/Brown and Beige Minimalist Fashion Banner.png") center/cover no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.3))), url("/assets/Brown and Beige Minimalist Fashion Banner.png") center/cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)), url("/assets/Brown and Beige Minimalist Fashion Banner.png") center/cover no-repeat;
 }
 
 .flex {
