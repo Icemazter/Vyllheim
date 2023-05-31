@@ -4,12 +4,12 @@
 
 @font-face {
     font-family:"helvetica-bold";
-    src: url(../Helvetica-Bold.ttf);
+    src: url(../fonts/Helvetica-Bold.ttf);
 }
 
 @font-face {
     font-family:"vermin";
-    src: url(../vermin_vibes_slant.ttf)
+    src: url(../fonts/vermin_vibes_slant.ttf)
 }
 
 ::-webkit-scrollbar {
@@ -156,7 +156,8 @@ nav{
   font-size: 17px;
   padding: 7px 13px;
   border-radius: 3px;
-  font-family:'helvetica-bold';
+  font-family:'helvetica';
+  font-weight: 700;
   }
   a:active,a:hover{
   
