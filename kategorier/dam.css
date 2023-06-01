@@ -5,12 +5,12 @@
 
 @font-face {
   font-family: "helvetica-bold";
-  src: url(../Helvetica-Bold.ttf);
+  src: url(../fonts/Helvetica-Bold.ttf);
 }
 
 @font-face {
   font-family: "vermin";
-  src: url(../vermin_vibes_slant.ttf);
+  src: url(../fonts/vermin_vibes_slant.ttf);
 }
 
 ::-webkit-scrollbar {
@@ -153,7 +153,8 @@ nav .dropmenu li a {
   font-size: 17px;
   padding: 7px 13px;
   border-radius: 3px;
-  font-family: 'helvetica-bold';
+  font-family: 'helvetica';
+  font-weight: 700;
 }
 
 a:active, a:hover {
@@ -603,13 +604,13 @@ body {
 }
 
 .product-col-left {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.3))), url("/assets/GQB_Fragrance_Digital_16x9.webp") center/cover no-repeat;
-  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)), url("/assets/GQB_Fragrance_Digital_16x9.webp") center/cover no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.3))), url("../assets/GQB_Fragrance_Digital_16x9.webp") center/cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)), url("../assets/GQB_Fragrance_Digital_16x9.webp") center/cover no-repeat;
 }
 
 .product-col-r-top {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.3))), url("/assets/Brown and Beige Minimalist Fashion Banner.png") center/cover no-repeat;
-  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)), url("/assets/Brown and Beige Minimalist Fashion Banner.png") center/cover no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.3))), url("../assets/Brown and Beige Minimalist Fashion Banner.png") center/cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)), url("../assets/Brown and Beige Minimalist Fashion Banner.png") center/cover no-repeat;
 }
 
 .flex {
@@ -714,20 +715,20 @@ body {
   .product-items {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[2];
+
         grid-template-columns: repeat(2, 1fr);
   }
   .product-col-r-bottom {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[2];
+
         grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media screen and (min-width: 1200px) {
   .product-items {
-    -ms-grid-columns: (1fr)[3];
+
         grid-template-columns: repeat(3, 1fr);
   }
   .product {
@@ -741,13 +742,13 @@ body {
 
 @media screen and (min-width: 1336px) {
   .product-items {
-    -ms-grid-columns: (1fr)[4];
+
         grid-template-columns: repeat(4, 1fr);
   }
   .product-collection-wrapper {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[2];
+   
         grid-template-columns: repeat(2, 1fr);
   }
   .flex {
