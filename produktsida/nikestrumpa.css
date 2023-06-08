@@ -68,8 +68,16 @@ a:visited {
 
 nav {
   background: var(--primary-color);
-  height: 100px;
+  height: 80px;
   width: 100%;
+}
+
+.kategorier:hover {
+  -webkit-columns: var(--dark-grey-color);
+          columns: var(--dark-grey-color);
+  opacity: 0.8;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
 }
 
 label.logo {
@@ -88,6 +96,58 @@ label.logo img {
   background-color: var(--primary-color);
 }
 
+@media (max-width: 1090px) {
+  label.logo {
+    padding-left: 30px;
+    line-height: 110px;
+  }
+  img {
+    width: 18rem;
+  }
+  nav ul li a {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 458px) {
+  label.logo {
+    line-height: 86px;
+    padding: 15px;
+  }
+  label.logo img {
+    width: 13rem;
+  }
+}
+
+@media (max-width: 390px) {
+  label.logo {
+    line-height: 85px;
+  }
+  label.logo img {
+    width: 12.5rem;
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 343px) {
+  label.logo {
+    line-height: 82px;
+  }
+  label.logo img {
+    width: 10.5rem;
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 290px) {
+  label.logo {
+    line-height: 82px;
+  }
+  label.logo img {
+    width: 10rem;
+  }
+}
+
 nav .dropmenu {
   float: right;
   margin-right: 15px;
@@ -104,13 +164,14 @@ nav .dropmenu li a {
   font-size: 17px;
   padding: 7px 13px;
   border-radius: 3px;
-  font-weight: 700;
   font-family: 'helvetica';
+  font-weight: 700;
 }
 
-.kategorier:hover {
-  background: none;
-  opacity: .8;
+a:active, a:hover {
+  -webkit-transition: .5s;
+  transition: .5s;
+  color: var(--dark-grey-color);
 }
 
 .checkbtn {
@@ -127,10 +188,14 @@ nav .dropmenu li a {
   display: none;
 }
 
+.fa-solid:hover {
+  opacity: 0.7;
+}
+
 @media (max-width: 1090px) {
   label.logo {
-    padding-left: 30px;
-    line-height: 120px;
+    font-size: 30px;
+    padding-left: 40px;
   }
   nav .dropmenu li a {
     font-size: 16px;
@@ -152,7 +217,7 @@ nav .dropmenu li a {
     -webkit-transition: all .5s;
     transition: all .5s;
     overflow-y: auto;
-    z-index: 102;
+    z-index: 4;
   }
   nav .dropmenu li {
     display: block;
@@ -176,35 +241,10 @@ nav .dropmenu li a {
   }
 }
 
-@media (max-width: 458px) {
-  label.logo {
-    line-height: 103px;
-    padding: 15px;
-  }
-  label.logo img {
-    width: 15rem;
-  }
-}
-
-@media (max-width: 340px) {
-  label.logo {
-    line-height: 100px;
-  }
-  label.logo img {
-    width: 13rem;
-  }
+@media (max-width: 282px) {
   .checkbtn {
     font-size: 20px;
     margin-right: 20px;
-  }
-}
-
-@media (max-width: 290px) {
-  label.logo {
-    line-height: 95px;
-  }
-  label.logo img {
-    width: 10rem;
   }
 }
 
@@ -264,10 +304,6 @@ nav .dropmenu li a {
   margin-top: 0.3rem;
 }
 
-.bag .bag-badge {
-  position: absolute;
-}
-
 @media (max-width: 500px) {
   .bottomnav .icons {
     margin: 0 0.02rem;
@@ -293,7 +329,19 @@ nav .dropmenu li a {
   border-radius: 0.5rem;
   color: var(--black-color);
   font-size: 1.3rem;
-  width: 60%;
+  width: 50%;
+}
+
+@media (max-width: 800px) {
+  .input-wrapper {
+    width: 60%;
+  }
+}
+
+@media (max-width: 600px) {
+  .input-wrapper {
+    width: 100%;
+  }
 }
 
 input {
@@ -304,6 +352,7 @@ input {
   background-color: var(--white-color);
   color: var(--black-color);
   padding: 0.5rem;
+  position: relatives;
 }
 
 ::-webkit-input-placeholder {
