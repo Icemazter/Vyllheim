@@ -96,6 +96,9 @@ label.logo img {
     padding-left: 30px;
     line-height: 110px;
   }
+  img {
+    width: 18rem;
+  }
   nav ul li a {
     font-size: 16px;
   }
@@ -103,26 +106,37 @@ label.logo img {
 
 @media (max-width: 458px) {
   label.logo {
-    line-height: 98px;
+    line-height: 86px;
     padding: 15px;
-  }
-  label.logo img {
-    width: 15rem;
-  }
-}
-
-@media (max-width: 340px) {
-  label.logo {
-    line-height: 100px;
   }
   label.logo img {
     width: 13rem;
   }
 }
 
+@media (max-width: 390px) {
+  label.logo {
+    line-height: 85px;
+  }
+  label.logo img {
+    width: 12.5rem;
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 343px) {
+  label.logo {
+    line-height: 82px;
+  }
+  label.logo img {
+    width: 10.5rem;
+    margin-right: 10px;
+  }
+}
+
 @media (max-width: 290px) {
   label.logo {
-    line-height: 95px;
+    line-height: 82px;
   }
   label.logo img {
     width: 10rem;
@@ -370,6 +384,7 @@ input[type="search"]::-webkit-search-cancel-button {
   background-color: var(--secondary-color);
   z-index: 2;
   width: 100%;
+  min-height: 399.91px;
 }
 
 p {

@@ -103,6 +103,10 @@
           line-height: 110px;
          
         }
+
+        img{
+          width: 18rem;
+        }
         nav ul li a{
           font-size: 16px;
         
@@ -112,27 +116,43 @@
     
     @media (max-width:458px) {
         label.logo{
-          line-height: 98px;
+          line-height: 86px;
           padding: 15px;
+        
           img{
-            width: 15rem;
+            width: 13rem;  
+            
           }
         }
         }
     
     
-    @media (max-width:340px) {
+    @media (max-width:390px) {
     label.logo{
-      line-height: 100px;
+      line-height: 85px;
       img{
-        width: 13rem;
+        width: 12.5rem;
+        margin-right: 20px;
       }
      
     }}
     
+    @media (max-width:343px) {
+    label.logo{
+      line-height: 82px;
+      img{
+        width: 10.5rem;
+        margin-right: 10px;
+      }
+     
+    }}
+    
+    
+    
+    
     @media (max-width:290px) {
         label.logo{
-          line-height: 95px;
+          line-height: 82px;
           img{
             width: 10rem;
           }
@@ -375,8 +395,13 @@
 background-color: var(--secondary-color);
 z-index: 2;
 width: 100%;
+min-height: 399.91px;
+
+
 
 }
+
+
 
 p{
   color: #000000;
