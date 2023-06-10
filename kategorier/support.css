@@ -390,6 +390,7 @@ body {
 
 h1 {
   text-align: center;
+  margin-top: 12rem;
 }
 
 h2 {
@@ -477,7 +478,7 @@ h2 {
 }
 
 .extra p {
-  margin-left: 300px;
+  margin-left: 10px;
 }
 
 .footer * {

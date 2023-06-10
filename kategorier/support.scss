@@ -399,6 +399,8 @@
     
         h1{
             text-align: center;
+          margin-top: 12rem;
+    
         }
 
         h2{
@@ -422,6 +424,7 @@
       border: none;
       outline: none;
       transition: 0.4s;
+
     }
     
     //bakgrundsfärg på klick eller hover på knappen//
@@ -488,10 +491,10 @@
         h2{
             margin-bottom: 40px;
         }
-    p{
+        p{
+          margin-left: 10px;
+        }
 
-        margin-left: 300px;
-    }
       }
 
       
