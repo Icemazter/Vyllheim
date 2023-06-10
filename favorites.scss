@@ -389,16 +389,12 @@ linear-gradient(135deg, transparent 0%,transparent 43%,#000 45%,#000 55%,transpa
 //kundvagns produkter och utseende// 
 
 p {
-  position: absolute;
-  top: 20rem;
-  left: 45%;
+  text-align: center;
   color: #333;
   text-transform: uppercase;
-  font-family: 'helvetica';
-  font-weight: 700;
+  font-family: "helvetica";
   font-size: 35px;
-  
-
+  font-weight: 700;
 }
 
 
@@ -416,7 +412,7 @@ margin-right: 2rem;
 
 
 .favorite-products{
-  margin-top: 20rem;
+  margin-top: 15rem;
   margin-left: 15rem;
   .title{
     font-size: 20px;
@@ -428,18 +424,16 @@ margin-right: 2rem;
     }
   }
   }
-  .favorite-products img{
-   object-fit: contain;
-    margin-top: 4px;
+
+ img{
+   width: 100px;
+   max-height: 100px;
     
   }
-  .title-head{
-    position: absolute; // lägger header titlarna över cart föremålen
-    top: 408px;
+ 
     
     
-    
-  }
+  
   .remove:hover{
     opacity: 0.5;
     transition: 0.3s;
@@ -463,20 +457,8 @@ margin-right: 2rem;
 
 
 
-.summary{
 
-  display: inline;
-  float: left;
-  background-color: #f2f2f2;
-  border: 1px solid #ddd;
-  border-radius: 3em;
-  padding: 10px;
-  font-size: 16px;
-  font-weight: bold;
-  color: #333;
- margin-right: 2rem;
-margin-top: 50px;
-}
+
 
 
   .checkout{
@@ -495,6 +477,9 @@ margin-top: 50px;
     background-color: var(--primary-secondary-color);
     transition: 0.3s;
   }
+
+
+  
   
 
   .shopping{
@@ -530,14 +515,60 @@ margin-top: 50px;
   
   .summary {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
     margin-top: 50px;
     padding: 10px;
     background-color: #333;
     color: #fff;
     border-radius: 5px;
   }
+
+
+
+  
+  @media(max-width: 704px){
+    .checkout{
+      margin-right: 2rem;
+      width: 80%;
+  
+    }
+    .shopping{
+      margin-right: 2rem;
+    width: 80%;
+    }
+    .title-head{
+      display: none;
+
+    }
+    .sub{
+      display: none;
+
+    }
+    .remove{
+      display: block;
+    }
+   
+    
+    .total{
+      font-size: 12px;
+    }
+    .cart-products{
+      .title{
+        font-size: 15px;
+      }
+      .product-price{
+        font-size: 12px;
+      }
+  }
+
+
+
+  }
+  
+  .title-head{
+    display: none;
+  }
+
+
 
   .foot-container{
     max-width: 1170px;

@@ -89,68 +89,68 @@ label.logo{
 
  
     @media (max-width: 1090px){
-      label.logo{
-      
-        padding-left: 30px;
-        line-height: 110px;
-       
-      }
+        label.logo{
+        
+          padding-left: 30px;
+          line-height: 110px;
+         
+        }
 
+        img{
+          width: 18rem;
+        }
+        nav ul li a{
+          font-size: 16px;
+        
+        }
+        }
+    
+    
+    @media (max-width:458px) {
+        label.logo{
+          line-height: 86px;
+          padding: 15px;
+        
+          img{
+            width: 13rem;  
+            
+          }
+        }
+        }
+    
+    
+    @media (max-width:390px) {
+    label.logo{
+      line-height: 85px;
       img{
-        width: 18rem;
+        width: 12.5rem;
+        margin-right: 20px;
       }
-      nav ul li a{
-        font-size: 16px;
-      
+     
+    }}
+    
+    @media (max-width:343px) {
+    label.logo{
+      line-height: 82px;
+      img{
+        width: 10.5rem;
+        margin-right: 10px;
       }
-      }
-  
-  
-  @media (max-width:458px) {
-      label.logo{
-        line-height: 86px;
-        padding: 15px;
-      
-        img{
-          width: 13rem;  
-          
+     
+    }}
+    
+    
+    
+    
+    @media (max-width:290px) {
+        label.logo{
+          line-height: 82px;
+          img{
+            width: 10rem;
+          }
         }
       }
-      }
-  
-  
-  @media (max-width:390px) {
-  label.logo{
-    line-height: 85px;
-    img{
-      width: 12.5rem;
-      margin-right: 20px;
-    }
-   
-  }}
-  
-  @media (max-width:343px) {
-  label.logo{
-    line-height: 82px;
-    img{
-      width: 10.5rem;
-      margin-right: 10px;
-    }
-   
-  }}
-  
-  
-  
-  
-  @media (max-width:290px) {
-      label.logo{
-        line-height: 82px;
-        img{
-          width: 10rem;
-        }
-      }
-    }
-  
+    
 
 
 nav .dropmenu{
@@ -376,14 +376,13 @@ linear-gradient(135deg, transparent 0%,transparent 43%,#000 45%,#000 55%,transpa
 //kundvagns produkter och utseende// 
 
 p {
-  position: absolute;
-  top: 20rem;
-  left: 45%;
+  text-align: center;
   color: #333;
   text-transform: uppercase;
   font-family: "helvetica";
   font-size: 35px;
   font-weight: 700;
+
   
 
 }
@@ -403,7 +402,7 @@ margin-right: 2rem;
 
 
 .cart-products{
-  margin-top: 20rem;
+  margin-top: 15rem;
   margin-left: 15rem;
   .title{
     font-size: 20px;
@@ -417,16 +416,13 @@ margin-right: 2rem;
     }
   }
   }
-  .cart-products img{
-   object-fit: contain;
-    margin-top: 4px;
+ img{
+    width: 100px;
+    max-height: 100px;
+
     
   }
-  .title-head{
-    position: absolute; // lägger header titlarna över cart föremålen
-    top: 408px;
-  
-  }
+
 
 
 
@@ -454,20 +450,7 @@ margin-right: 2rem;
 
 
 
-.summary{
 
-  display: inline;
-  float: left;
-  background-color: #f2f2f2;
-  border: 1px solid #ddd;
-  border-radius: 3em;
-  padding: 10px;
-  font-size: 16px;
-  font-weight: bold;
-  color: #333;
- margin-right: 2rem;
-margin-top: 50px;
-}
 
 
   .checkout{
@@ -497,8 +480,7 @@ margin-top: 50px;
       padding: 10px;
       font-family: 'helvetica';
       font-weight: 700;
-      margin-right: 9rem;
-    
+      margin-right: 9rem;    
   }
 
   .shopping:hover{
@@ -508,6 +490,7 @@ margin-top: 50px;
     
   }
   
+
 
   .container {
     max-width: 1800px;
@@ -521,14 +504,60 @@ margin-top: 50px;
   
   .summary {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
     margin-top: 50px;
     padding: 10px;
     background-color: #333;
     color: #fff;
     border-radius: 5px;
   }
+
+
+
+  @media(max-width: 704px){
+    .checkout{
+      margin-right: 2rem;
+      width: 80%;
+  
+    }
+    .shopping{
+      margin-right: 2rem;
+    width: 80%;
+    }
+    .title-head{
+      display: none;
+
+    }
+    .sub{
+      display: none;
+
+    }
+    .remove{
+      display: block;
+    }
+   
+    
+    .total{
+      font-size: 12px;
+    }
+    .cart-products{
+      .title{
+        font-size: 15px;
+      }
+      .product-price{
+        font-size: 12px;
+      }
+  }
+
+
+
+  }
+  
+  .title-head{
+    display: none;
+  }
+
+
+
 
   .foot-container{
     max-width: 1170px;
